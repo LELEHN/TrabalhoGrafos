@@ -35,4 +35,5 @@ public class Vertice<T> {
     public void setArestasSaida(ArrayList<Aresta<T>> arestasSaida) {
         this.arestasSaida = arestasSaida;
     }
+
 }
