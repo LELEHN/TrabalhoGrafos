@@ -9,7 +9,6 @@ public class Vertice<T> {
         this.dado = valor;
         this.arestasEntrada = new ArrayList<Aresta<T>>();
         this.arestasSaida = new ArrayList<Aresta<T>>();
-        
     }
 
     public T getDado() {
@@ -35,5 +34,4 @@ public class Vertice<T> {
     public void setArestasSaida(ArrayList<Aresta<T>> arestasSaida) {
         this.arestasSaida = arestasSaida;
     }
-
 }
