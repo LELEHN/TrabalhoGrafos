@@ -120,12 +120,12 @@ public class Grafo<T> {
         Vertice<T> verticeDestino = getUsuario(destino);
 
         if (verticeOrigem == null || verticeDestino == null) {
-            System.out.println("❌ Usuário não encontrado!");
+            System.out.println("Usuário não encontrado!");
             return;
         }
 
         if (verticeOrigem.equals(verticeDestino)) {
-            System.out.println("✅ Origem e destino são a mesma pessoa!");
+            System.out.println("Origem e destino são a mesma pessoa!");
             return;
         }
 
@@ -160,7 +160,7 @@ public class Grafo<T> {
         }
 
         if (!encontrou) {
-            System.out.println("❌ Não há caminho entre " + origem + " e " + destino);
+            System.out.println("Não há caminho entre " + origem + " e " + destino);
             return;
         }
 
@@ -174,7 +174,7 @@ public class Grafo<T> {
         }
 
         // Exibe o caminho
-        System.out.println("\n✅ CAMINHO ENCONTRADO:");
+        System.out.println("\nCAMINHO ENCONTRADO:");
         System.out.println("📍 Distância: " + (caminho.size() - 1) + " conexão(ões)\n");
 
         for (int i = 0; i < caminho.size(); i++) {
@@ -188,11 +188,11 @@ public class Grafo<T> {
 
     public void listarTodosUsuarios() {
         if (vertices.isEmpty()) {
-            System.out.println("⚠️ Nenhum usuário cadastrado no grafo.");
+            System.out.println(" Nenhum usuário cadastrado no grafo.");
             return;
         }
 
-        System.out.println("📋 Usuários cadastrados no grafo:");
+        System.out.println("Usuários cadastrados no grafo:");
         for (Vertice<T> v : vertices) {
             System.out.println("• " + v.getDado());
         }
@@ -215,7 +215,7 @@ public class Grafo<T> {
     
     // Seguidores
     ArrayList<Aresta<T>> seguidores = vertice.getArestasEntrada();
-    System.out.println("\n👥 SEGUIDORES (" + seguidores.size() + "):");
+    System.out.println("\n SEGUIDORES (" + seguidores.size() + "):");
     if (seguidores.isEmpty()) {
         System.out.println("   (Nenhum seguidor ainda)");
     } else {
@@ -226,7 +226,7 @@ public class Grafo<T> {
     
     // Seguindo
     ArrayList<Aresta<T>> seguindo = vertice.getArestasSaida();
-    System.out.println("\n✨ SEGUINDO (" + seguindo.size() + "):");
+    System.out.println("\n SEGUINDO (" + seguindo.size() + "):");
     if (seguindo.isEmpty()) {
         System.out.println("   (Não está seguindo ninguém)");
     } else {

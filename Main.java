@@ -75,19 +75,19 @@ public class Main {
 
                     if (usuario1 != null && usuario2 != null) {
                         usuGrafo.addSeguidor(usuario1, usuario2);
-                        System.out.println("✅ " + nome1 + " agora segue " + nome2 + "!");
+                        System.out.println(nome1 + " agora segue " + nome2 + "!");
                     } else {
-                        System.out.println("❌ Um ou ambos os usuários não foram encontrados!");
+                        System.out.println("Um ou ambos os usuários não foram encontrados!");
                     }
                     break;
                 case 4:
-                    System.out.println("\n👥 LISTA DE TODAS AS PESSOAS");
+                    System.out.println("\nLISTA DE TODAS AS PESSOAS");
                     System.out.println("_________________________");
                     usuGrafo.listarTodosUsuarios();
                     break;
 
                     case 5: // Ver amigos de alguém
-                        System.out.println("\n👤 VER PERFIL E CONEXÕES");
+                        System.out.println("\nVER PERFIL E CONEXÕES");
                         System.out.println("________________________________");
                         
                         System.out.print("Nome da pessoa: ");
@@ -98,7 +98,7 @@ public class Main {
                         if (usuario != null) {
                             usuGrafo.exibirPerfilCompleto(usuario);
                         } else {
-                            System.out.println("❌ Usuário não encontrado!");
+                            System.out.println("Usuário não encontrado!");
                         }
                         break;
 

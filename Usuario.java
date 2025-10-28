@@ -6,6 +6,10 @@ public class Usuario {
 
     private int idade;
 
+    public Usuario(){
+        
+    }
+
     public Usuario(String nome, String email, int idade) {
         this.nome = nome;
         this.email = email;
@@ -36,5 +40,8 @@ public class Usuario {
         this.idade = idade;
     }
 
-    
+    public String toString() {
+        return nome + " (" + email + ", " + idade + " anos)";
+    }
+
 }
