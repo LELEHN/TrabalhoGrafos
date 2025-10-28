@@ -26,6 +26,5 @@ public class Aresta<T> {
         this.fim = fim;
     }
 
-    
 
 }

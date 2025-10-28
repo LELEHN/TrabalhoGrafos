@@ -43,4 +43,13 @@ public class Vertice<T> {
         this.arestasSaida.add(aresta);
     }
 
+    public void removerArestaSaida(Aresta<T> aresta) {
+        arestasSaida.remove(aresta);
+    }
+
+    // ✅ Remove uma aresta de entrada específica
+    public void removerArestaEntrada(Aresta<T> aresta) {
+        arestasEntrada.remove(aresta);
+    }
+
 }
