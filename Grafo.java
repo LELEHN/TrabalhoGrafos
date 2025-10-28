@@ -20,13 +20,13 @@ public class Grafo<T> {
         this.vertices.add(novoVertice);
     }
 
-    public void addSeguidor(double peso, T usuario1, T usuario2){
+    public void addSeguidor(T usuario1, T usuario2){
 
         Vertice<T> inicio = this.getUsuario(usuario1);
 
         Vertice<T> fim = this.getUsuario(usuario2);
 
-        Aresta<T> aresta = new Aresta<>(peso, inicio, fim);
+        Aresta<T> aresta = new Aresta<>(inicio, fim);
 
         inicio.adicionarArestaSaida(aresta);
 
